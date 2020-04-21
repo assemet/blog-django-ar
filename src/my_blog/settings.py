@@ -122,9 +122,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#If you want to make Static folder for all project you can use this code
-STATICFILES_DIRS =[
-    os.path.join(BASE_DIR,"static"),
-    '/Users/admin/desktop/blogger/src/static',
-
-]
+# #If you want to make Static folder for all project you can use this code
+# STATICFILES_DIRS =[
+#     os.path.join(BASE_DIR,"static"),
+#     '/Users/admin/desktop/blogger/src/static',
+#
+# ]
