@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -47,8 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'blog.apps.BlogConfig',
-    'user.apps.UserConfig',
+
 ]
 
 ROOT_URLCONF = 'my_blog.urls'
@@ -120,3 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#If you want to make Static folder for all project you can use this code
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR,"static"),
+    '/Users/admin/desktop/blogger/src/static',
+
+]
